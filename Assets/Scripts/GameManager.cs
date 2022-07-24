@@ -1,11 +1,7 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using Cinemachine;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Playables;
-using UnityEngine.Timeline;
 using Button = UnityEngine.UI.Button;
 
 public class GameManager : MonoBehaviour
