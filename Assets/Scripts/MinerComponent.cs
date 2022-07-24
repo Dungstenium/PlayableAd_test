@@ -1,5 +1,6 @@
 // using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class MinerComponent : BaseCharacter
@@ -13,7 +14,7 @@ public class MinerComponent : BaseCharacter
     [SerializeField] private float miningValue;
     private void OnEnable()
     {
-        // prefabText.GetComponent<TMP_Text>().text = $"+{miningValue}";
+        prefabText.GetComponent<Text>().text = $"+{miningValue}";
 
         base.OnEnable();
     }
