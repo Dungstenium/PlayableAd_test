@@ -13,7 +13,7 @@ public class ImageChangerComponent : MonoBehaviour
 
     private Image imageComponent;
 
-    private void Awake()
+    private void Start()
     {
         imageComponent = GetComponent<Image>();
         
@@ -27,6 +27,8 @@ public class ImageChangerComponent : MonoBehaviour
 
     private void SwapOrientationImage()
     {
+        if (imageComponent == null) return;
+
         if (Screen.orientation is ScreenOrientation.Portrait or ScreenOrientation.PortraitUpsideDown)
         {
             imageComponent.sprite = portraitImage;
