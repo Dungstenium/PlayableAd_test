@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
-using Cinemachine;
-using TMPro;
+// using Cinemachine;
+// using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,7 +16,7 @@ public class UpgraderComponent : MonoBehaviour
     [SerializeField] private Sprite[] corridorSpriteVersion;
     [SerializeField] private string[] buttonTextList;
 
-    [SerializeField] private CinemachineVirtualCamera cam;
+    [SerializeField] private CameraZoomAdapter cam;
     private Button button;
 
     public event Action OnLastUpgradeEnd;
@@ -73,8 +73,8 @@ public class UpgraderComponent : MonoBehaviour
     
     private void ShakeScreen(float value)
     {
-        cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = value;
-        cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = value;
+        // cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = value;
+        // cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = value;
     }
 
     private void DeactivateObject()
@@ -113,6 +113,6 @@ public class UpgraderComponent : MonoBehaviour
     
     private void SwapText()
     {
-        button.GetComponentInChildren<TMP_Text>().text = buttonTextList[upgradeLevel];
+        // button.GetComponentInChildren<TMP_Text>().text = buttonTextList[upgradeLevel];
     }
 }

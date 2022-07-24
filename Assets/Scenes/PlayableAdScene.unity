@@ -661,7 +661,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52d21f84d0fc8b42b82b4f870a6e6e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnClip: {fileID: 8300000, guid: 19189fffcff66f14ea058fe97b7cefeb, type: 3}
+  spawnClip: {fileID: 8300000, guid: d6187720844f8a34ab03f4c937c3a1a9, type: 3}
 --- !u!1 &109863893
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,16 +792,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7155796051b734daa718462081dc5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 0.86000013, z: -10}
-  m_XDamping: 1
-  m_YDamping: 1
-  m_ZDamping: 1
-  m_AngularDampingMode: 0
-  m_PitchDamping: 0
-  m_YawDamping: 0
-  m_RollDamping: 0
-  m_AngularDamping: 0
 --- !u!114 &163736487
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -826,11 +816,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
-  m_PivotOffset: {x: 0, y: 0, z: 0}
-  m_AmplitudeGain: 0
-  m_FrequencyGain: 0
-  mNoiseOffsets: {x: -496.63672, y: -899.0521, z: 629.4723}
 --- !u!1 &166388610
 GameObject:
   m_ObjectHideFlags: 0
@@ -2105,11 +2090,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
-  m_PivotOffset: {x: 0, y: 0, z: 0}
-  m_AmplitudeGain: 0
-  m_FrequencyGain: 0
-  mNoiseOffsets: {x: 533.0226, y: 620.0378, z: -121.801025}
 --- !u!114 &310302459
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -2122,16 +2102,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7155796051b734daa718462081dc5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 3.9599998, z: -10}
-  m_XDamping: 1
-  m_YDamping: 1
-  m_ZDamping: 1
-  m_AngularDampingMode: 0
-  m_PitchDamping: 0
-  m_YawDamping: 0
-  m_RollDamping: 0
-  m_AngularDamping: 0
 --- !u!114 &310302460
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -2327,7 +2297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52d21f84d0fc8b42b82b4f870a6e6e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnClip: {fileID: 8300000, guid: 19189fffcff66f14ea058fe97b7cefeb, type: 3}
+  spawnClip: {fileID: 8300000, guid: d6187720844f8a34ab03f4c937c3a1a9, type: 3}
 --- !u!1 &390389153
 GameObject:
   m_ObjectHideFlags: 0
@@ -2627,7 +2597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52d21f84d0fc8b42b82b4f870a6e6e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnClip: {fileID: 8300000, guid: 19189fffcff66f14ea058fe97b7cefeb, type: 3}
+  spawnClip: {fileID: 8300000, guid: d6187720844f8a34ab03f4c937c3a1a9, type: 3}
 --- !u!1001 &432417928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3045,7 +3015,6 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
-  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3119,40 +3088,6 @@ Transform:
   m_Father: {fileID: 1578019185}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &519420033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShowDebugText: 0
-  m_ShowCameraFrustum: 1
-  m_IgnoreTimeScale: 0
-  m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
-  m_BlendUpdateMethod: 1
-  m_DefaultBlend:
-    m_Style: 1
-    m_Time: 2
-    m_CustomCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
-  m_CameraCutEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_CameraActivatedEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &540706193
 GameObject:
   m_ObjectHideFlags: 0
@@ -3439,83 +3374,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Tap to collect Gold
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db54f892638d2b8408b7339c38fe0bb3, type: 2}
-  m_sharedMaterial: {fileID: 1499115383880271583, guid: db54f892638d2b8408b7339c38fe0bb3, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 33.213417, y: 26.95583, z: 25.030418, w: 36.582924}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &551444801
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3537,7 +3395,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1.5
-  text: {fileID: 551444800}
   destroyOnFinish: 0
 --- !u!1 &557632716
 GameObject:
@@ -5085,37 +4942,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 0.6499998, y: 0.60000014, z: 0}
-  m_LookaheadTime: 0
-  m_LookaheadSmoothing: 0
-  m_LookaheadIgnoreY: 0
-  m_XDamping: 1
-  m_YDamping: 1
-  m_ZDamping: 1
-  m_TargetMovementOnly: 1
-  m_ScreenX: 0.5
-  m_ScreenY: 0.55
-  m_CameraDistance: 10
-  m_DeadZoneWidth: 0
-  m_DeadZoneHeight: 0
-  m_DeadZoneDepth: 0
-  m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0.12
-  m_SoftZoneHeight: 0.13
-  m_BiasX: -0.4280001
-  m_BiasY: -0.12300015
-  m_CenterOnActivate: 1
-  m_GroupFramingMode: 2
-  m_AdjustmentMode: 0
-  m_GroupFramingSize: 0.8
-  m_MaxDollyIn: 5000
-  m_MaxDollyOut: 5000
-  m_MinimumDistance: 1
-  m_MaximumDistance: 5000
-  m_MinimumFOV: 3
-  m_MaximumFOV: 60
-  m_MinimumOrthoSize: 1
-  m_MaximumOrthoSize: 5000
 --- !u!114 &940379770
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -5633,83 +5459,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Upgrade
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db54f892638d2b8408b7339c38fe0bb3, type: 2}
-  m_sharedMaterial: {fileID: 1499115383880271583, guid: db54f892638d2b8408b7339c38fe0bb3, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4292470232
-  m_fontColor: {r: 0.8488786, g: 0.8962264, b: 0.8491434, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 19
-  m_fontSizeBase: 19
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: -1.1
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1023591929
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5920,8 +5669,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hireMinersButton: {fileID: 213036839}
-  cam1: {fileID: 1926701281}
-  cam3: {fileID: 1095515215}
   _director: {fileID: 1934509656}
   glow: {fileID: 390389156}
 --- !u!114 &1049967206
@@ -5955,7 +5702,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7181ba4452dced842882b12ab8e54e3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 75021104396965849, guid: 09e78c6081fb82b409aff73953a3e028, type: 3}
 --- !u!82 &1049967208
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6216,7 +5962,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1095515213}
-  - component: {fileID: 1095515215}
   - component: {fileID: 1095515214}
   m_Layer: 0
   m_Name: CM vcam3
@@ -6255,44 +6000,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portraitSize: 10
   landscapeSize: 7
---- !u!114 &1095515215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1095515212}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ExcludedPropertiesInInspector:
-  - m_Script
-  m_LockStageInInspector: 
-  m_StreamingVersion: 20170927
-  m_Priority: 10
-  m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
-  m_Lens:
-    FieldOfView: 60
-    OrthographicSize: 7.24
-    NearClipPlane: 0.3
-    FarClipPlane: 1000
-    Dutch: 0
-    ModeOverride: 0
-    LensShift: {x: 0, y: 0}
-    GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
-  m_Transitions:
-    m_BlendHint: 0
-    m_InheritPosition: 0
-    m_OnCameraLive:
-      m_PersistentCalls:
-        m_Calls: []
-  m_LegacyBlendHint: 0
-  m_ComponentOwner: {fileID: 310302457}
 --- !u!1 &1111584161
 GameObject:
   m_ObjectHideFlags: 0
@@ -6302,7 +6009,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1111584164}
-  - component: {fileID: 1111584163}
   - component: {fileID: 1111584162}
   m_Layer: 0
   m_Name: CM vcam2
@@ -6325,44 +6031,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portraitSize: 6
   landscapeSize: 2.4
---- !u!114 &1111584163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1111584161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ExcludedPropertiesInInspector:
-  - m_Script
-  m_LockStageInInspector: 
-  m_StreamingVersion: 20170927
-  m_Priority: 10
-  m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 1697795664}
-  m_Lens:
-    FieldOfView: 60
-    OrthographicSize: 2.4
-    NearClipPlane: 0.3
-    FarClipPlane: 1000
-    Dutch: 0
-    ModeOverride: 0
-    LensShift: {x: 0, y: 0}
-    GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
-  m_Transitions:
-    m_BlendHint: 0
-    m_InheritPosition: 0
-    m_OnCameraLive:
-      m_PersistentCalls:
-        m_Calls: []
-  m_LegacyBlendHint: 0
-  m_ComponentOwner: {fileID: 163736484}
 --- !u!4 &1111584164
 Transform:
   m_ObjectHideFlags: 0
@@ -7003,7 +6671,7 @@ MonoBehaviour:
   - MORE
   - MOOORE
   - MOAAAR!!
-  cam: {fileID: 1111584163}
+  cam: {fileID: 0}
 --- !u!114 &1237029070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8263,7 +7931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52d21f84d0fc8b42b82b4f870a6e6e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnClip: {fileID: 8300000, guid: 19189fffcff66f14ea058fe97b7cefeb, type: 3}
+  spawnClip: {fileID: 8300000, guid: d6187720844f8a34ab03f4c937c3a1a9, type: 3}
 --- !u!1 &1477779709
 GameObject:
   m_ObjectHideFlags: 0
@@ -8838,13 +8506,13 @@ PlayableDirector:
   - key: {fileID: 1956215162595022772, guid: bca101f5ce342a04ca95acdc5c085a77, type: 2}
     value: {fileID: 1697795663}
   - key: {fileID: 4163523883299233166, guid: bca101f5ce342a04ca95acdc5c085a77, type: 2}
-    value: {fileID: 519420033}
+    value: {fileID: 0}
   - key: {fileID: -4386684307180840784, guid: bca101f5ce342a04ca95acdc5c085a77, type: 2}
     value: {fileID: 1049967204}
   m_ExposedReferences:
     m_References:
-    - d21655657e6906040bb82d7284255b8d: {fileID: 1111584163}
-    - aafa429fffa37c4448e76eccd9f51955: {fileID: 1926701281}
+    - d21655657e6906040bb82d7284255b8d: {fileID: 0}
+    - aafa429fffa37c4448e76eccd9f51955: {fileID: 0}
 --- !u!4 &1580333379
 Transform:
   m_ObjectHideFlags: 0
@@ -9501,7 +9169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52d21f84d0fc8b42b82b4f870a6e6e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnClip: {fileID: 8300000, guid: 19189fffcff66f14ea058fe97b7cefeb, type: 3}
+  spawnClip: {fileID: 8300000, guid: d6187720844f8a34ab03f4c937c3a1a9, type: 3}
 --- !u!1 &1845036782
 GameObject:
   m_ObjectHideFlags: 0
@@ -9945,7 +9613,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1926701282}
-  - component: {fileID: 1926701281}
   - component: {fileID: 1926701283}
   m_Layer: 0
   m_Name: CM vcam1
@@ -9954,44 +9621,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1926701281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1926701280}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ExcludedPropertiesInInspector:
-  - m_Script
-  m_LockStageInInspector: 
-  m_StreamingVersion: 20170927
-  m_Priority: 10
-  m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 1697795664}
-  m_Lens:
-    FieldOfView: 60
-    OrthographicSize: 2.4
-    NearClipPlane: 0.3
-    FarClipPlane: 1000
-    Dutch: 0
-    ModeOverride: 0
-    LensShift: {x: 0, y: 0}
-    GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
-  m_Transitions:
-    m_BlendHint: 0
-    m_InheritPosition: 0
-    m_OnCameraLive:
-      m_PersistentCalls:
-        m_Calls: []
-  m_LegacyBlendHint: 0
-  m_ComponentOwner: {fileID: 940379768}
 --- !u!4 &1926701282
 Transform:
   m_ObjectHideFlags: 0
