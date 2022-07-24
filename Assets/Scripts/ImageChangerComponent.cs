@@ -13,9 +13,6 @@ public class ImageChangerComponent : MonoBehaviour
 
     private Image imageComponent;
 
-    private float width;
-    private float height;
-    
     private void Awake()
     {
         imageComponent = GetComponent<Image>();
@@ -38,9 +35,6 @@ public class ImageChangerComponent : MonoBehaviour
         {
             imageComponent.sprite = landscapeImage;
         }
-        
-        width = imageComponent.rectTransform.rect.width;
-        height = imageComponent.rectTransform.rect.height;
     }
 
     public void ExpandImage()
@@ -52,12 +46,9 @@ public class ImageChangerComponent : MonoBehaviour
     {
         while (true)
         {
-            width += width * 0.05f * Time.deltaTime;
-            height += height * 0.05f * Time.deltaTime;
-            
-            imageComponent.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, width);
-            imageComponent.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height);
-            imageComponent.rectTransform.ForceUpdateRectTransforms();
+            var localScale = imageComponent.rectTransform.localScale;
+            localScale += localScale * 0.05f * Time.deltaTime;
+            imageComponent.rectTransform.localScale = localScale;
             yield return null;
         }
     }
