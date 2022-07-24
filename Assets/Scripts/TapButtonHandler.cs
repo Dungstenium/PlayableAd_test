@@ -9,9 +9,9 @@ public class TapButtonHandler : MonoBehaviour
     [SerializeField] private Button button;
     [SerializeField] private Button nextButton;
     private AlphaFader fader;
-    [SerializeField] private PlayableDirector director;
 
     [SerializeField] private List<GameObject> minersList = new List<GameObject>();
+    [SerializeField] private Animator minerAnim;
 
     void Start()
     {
@@ -22,10 +22,19 @@ public class TapButtonHandler : MonoBehaviour
 
     private void AssignPhaseOneEvents()
     {
-        button.onClick.AddListener(director.Play);
         button.onClick.AddListener(() => GameManager.instance.glow.gameObject.SetActive(false));
+        button.onClick.AddListener(() => StartCoroutine(AnimateFirstMiner()));
     }
 
+    private IEnumerator AnimateFirstMiner()
+    {
+        minerAnim.SetBool("ShouldMine", true);
+
+        yield return new WaitForSeconds(minerAnim.GetCurrentAnimatorClipInfo(0).Length * 3);
+        
+        minerAnim.SetBool("ShouldMine", false);
+    }
+    
     public void UnassignPhaseOneEvents()
     {
         button.onClick.RemoveAllListeners();

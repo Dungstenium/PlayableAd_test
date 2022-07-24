@@ -7,6 +7,8 @@ public class ImageChangerComponent : MonoBehaviour
     [SerializeField] private Sprite portraitImage;
     [SerializeField] private Sprite landscapeImage;
 
+    private float counter = 0;
+    
     private Image imageComponent;
 
     private void Start()
@@ -14,6 +16,7 @@ public class ImageChangerComponent : MonoBehaviour
         imageComponent = GetComponent<Image>();
         
         SwapOrientationImage();
+        ExpandImage();
     }
 
     private void OnRectTransformDimensionsChange()
@@ -47,6 +50,13 @@ public class ImageChangerComponent : MonoBehaviour
             var localScale = imageComponent.rectTransform.localScale;
             localScale += localScale * 0.05f * Time.deltaTime;
             imageComponent.rectTransform.localScale = localScale;
+
+            counter += Time.deltaTime;
+            if (counter >= 3)
+            {
+                gameObject.SetActive(false);
+            }
+            
             yield return null;
         }
     }

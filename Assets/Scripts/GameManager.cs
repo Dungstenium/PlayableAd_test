@@ -1,7 +1,6 @@
 // using Cinemachine;
 // using TMPro;
 using UnityEngine;
-using UnityEngine.Playables;
 using Button = UnityEngine.UI.Button;
 
 public class GameManager : MonoBehaviour
@@ -11,12 +10,10 @@ public class GameManager : MonoBehaviour
     // [SerializeField] private CinemachineVirtualCamera cam1;
     // [SerializeField] private CinemachineVirtualCamera cam3;
 
-    [SerializeField] private PlayableDirector _director;
-
     public static GameManager instance;
 
     public GlowBlinker glow;
-    
+
     private void Awake()
     {
         instance = this;
@@ -33,8 +30,5 @@ public class GameManager : MonoBehaviour
     public void StartPhase4()
     {
         // cam3.gameObject.SetActive(true);
-        // _director.playableAsset = timelineAsset;
-        // _director.time = 0;
-        _director.Play();
-    }
+        }
 }
