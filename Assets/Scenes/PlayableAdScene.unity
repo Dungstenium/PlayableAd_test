@@ -554,6 +554,7 @@ GameObject:
   - component: {fileID: 52056071}
   - component: {fileID: 52056070}
   - component: {fileID: 52056069}
+  - component: {fileID: 52056072}
   m_Layer: 0
   m_Name: Transporter
   m_TagString: Untagged
@@ -641,13 +642,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 52056068}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.56, y: 0.38, z: 0}
+  m_LocalPosition: {x: -0.56, y: 0.68, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 325549795}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &52056072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52056068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52d21f84d0fc8b42b82b4f870a6e6e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnClip: {fileID: 8300000, guid: 19189fffcff66f14ea058fe97b7cefeb, type: 3}
 --- !u!1 &89734605
 GameObject:
   m_ObjectHideFlags: 0
@@ -2510,6 +2524,7 @@ GameObject:
   - component: {fileID: 348955545}
   - component: {fileID: 348955544}
   - component: {fileID: 348955543}
+  - component: {fileID: 348955546}
   m_Layer: 0
   m_Name: Manager Executive
   m_TagString: Untagged
@@ -2597,13 +2612,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 348955542}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.19, y: 0.37, z: -0.10785846}
+  m_LocalPosition: {x: -6.19, y: 0.67, z: -0.10785846}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 325549795}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &348955546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348955542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52d21f84d0fc8b42b82b4f870a6e6e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnClip: {fileID: 8300000, guid: 19189fffcff66f14ea058fe97b7cefeb, type: 3}
 --- !u!1 &390389153
 GameObject:
   m_ObjectHideFlags: 0
@@ -2872,6 +2900,7 @@ GameObject:
   - component: {fileID: 421234075}
   - component: {fileID: 421234074}
   - component: {fileID: 421234073}
+  - component: {fileID: 421234076}
   m_Layer: 0
   m_Name: Manager Senior
   m_TagString: Untagged
@@ -2959,13 +2988,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 421234072}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.02, y: -4.31, z: -0.10785846}
+  m_LocalPosition: {x: -4.02, y: -4.01, z: -0.10785846}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 325549795}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &421234076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421234072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52d21f84d0fc8b42b82b4f870a6e6e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnClip: {fileID: 8300000, guid: 19189fffcff66f14ea058fe97b7cefeb, type: 3}
 --- !u!1001 &432417928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8923,6 +8965,7 @@ GameObject:
   - component: {fileID: 1463622502}
   - component: {fileID: 1463622501}
   - component: {fileID: 1463622500}
+  - component: {fileID: 1463622503}
   m_Layer: 0
   m_Name: Manager Junior
   m_TagString: Untagged
@@ -9010,13 +9053,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1463622499}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.9099998, y: 0.42, z: -0.10785846}
+  m_LocalPosition: {x: 1.9099998, y: 0.72, z: -0.10785846}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 325549795}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1463622503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463622499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52d21f84d0fc8b42b82b4f870a6e6e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnClip: {fileID: 8300000, guid: 19189fffcff66f14ea058fe97b7cefeb, type: 3}
 --- !u!1 &1477779709
 GameObject:
   m_ObjectHideFlags: 0
@@ -10429,6 +10485,7 @@ GameObject:
   - component: {fileID: 1825759074}
   - component: {fileID: 1825759076}
   - component: {fileID: 1825759075}
+  - component: {fileID: 1825759077}
   m_Layer: 0
   m_Name: ElevatorWorker
   m_TagString: Untagged
@@ -10444,7 +10501,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1825759073}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.3068285, y: -2.407798, z: 0}
+  m_LocalPosition: {x: -6.3068285, y: -2.107798, z: 0}
   m_LocalScale: {x: 0.3788554, y: 0.3788554, z: 0.3788554}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -10523,6 +10580,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1825759077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825759073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52d21f84d0fc8b42b82b4f870a6e6e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnClip: {fileID: 8300000, guid: 19189fffcff66f14ea058fe97b7cefeb, type: 3}
 --- !u!1 &1845036782
 GameObject:
   m_ObjectHideFlags: 0
@@ -11666,6 +11736,10 @@ PrefabInstance:
     - target: {fileID: 75021104396965828, guid: 09e78c6081fb82b409aff73953a3e028, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 75021104396965829, guid: 09e78c6081fb82b409aff73953a3e028, type: 3}
+      propertyPath: spawnClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 75021104396965849, guid: 09e78c6081fb82b409aff73953a3e028, type: 3}
       propertyPath: m_Name
