@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Cinemachine;
 using TMPro;
@@ -18,12 +19,18 @@ public class UpgraderComponent : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera cam;
     private Button button;
 
+    public event Action OnLastUpgradeEnd;
+    
     private bool canBeClickedAgain = true;
     void Start()
     {
         button = GetComponent<Button>();
         
         button.onClick.AddListener(Upgrade);
+        
+        OnLastUpgradeEnd += GameManager.instance.StartPhase4;
+        OnLastUpgradeEnd += DeactivateObject;
+
     }
 
     public void Upgrade()
@@ -60,7 +67,7 @@ public class UpgraderComponent : MonoBehaviour
         
         if (upgradeLevel == corridorSpriteVersion.Length - 1)
         {
-            DeactivateObject();
+            OnLastUpgradeEnd?.Invoke();
         }
     }
     
