@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Playables;
 using Button = UnityEngine.UI.Button;
 
 public class TapButtonHandler : MonoBehaviour
@@ -13,7 +12,7 @@ public class TapButtonHandler : MonoBehaviour
     [SerializeField] private List<GameObject> minersList = new List<GameObject>();
     [SerializeField] private Animator minerAnim;
 
-    void Start()
+    private void Start()
     {
         fader = button.GetComponentInChildren<AlphaFader>();
 
@@ -24,6 +23,7 @@ public class TapButtonHandler : MonoBehaviour
     {
         button.onClick.AddListener(() => GameManager.instance.glow.gameObject.SetActive(false));
         button.onClick.AddListener(() => StartCoroutine(AnimateFirstMiner()));
+        button.onClick.AddListener(() => button.gameObject.SetActive(false));
     }
 
     private IEnumerator AnimateFirstMiner()
@@ -33,16 +33,19 @@ public class TapButtonHandler : MonoBehaviour
         yield return new WaitForSeconds(minerAnim.GetCurrentAnimatorClipInfo(0).Length * 3);
         
         minerAnim.SetBool("ShouldMine", false);
+        
+        UnassignPhaseOneEvents();
+        button.gameObject.SetActive(true);
     }
-    
-    public void UnassignPhaseOneEvents()
+
+    private void UnassignPhaseOneEvents()
     {
         button.onClick.RemoveAllListeners();
 
         AssignPhaseTwoEvents();
     }
-    
-    public void AssignPhaseTwoEvents()
+
+    private void AssignPhaseTwoEvents()
     {
         for (int i = 0; i < minersList.Count; i++)
         {
@@ -55,7 +58,12 @@ public class TapButtonHandler : MonoBehaviour
         button.onClick.AddListener(() => GameManager.instance.glow.gameObject.SetActive(false));
             
         button.onClick.AddListener(() => StartCoroutine(ObjectActivation(nextButton.gameObject, 3.0f)));
+        
+        button.onClick.AddListener(() => button.gameObject.SetActive(false));
 
+        GameManager.instance.LoadNextCamera();
+        
+        button.onClick.AddListener(() => StartCoroutine(UnassignAfterTime(3.0f)));
     }
 
     private IEnumerator ObjectActivation(GameObject goToActivate,float delay)
@@ -65,8 +73,17 @@ public class TapButtonHandler : MonoBehaviour
         goToActivate.SetActive(true);
     }
 
-    public void UnassignPhaseTwoEvents()
+    private IEnumerator UnassignAfterTime(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        UnassignPhaseTwoEvents();
+    }
+    
+    private void UnassignPhaseTwoEvents()
     {
         button.onClick.RemoveAllListeners();
+        
+        // GameManager.instance.LoadNextCamera();
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class CameraZoomAdapter : MonoBehaviour
@@ -7,12 +8,17 @@ public class CameraZoomAdapter : MonoBehaviour
 
     private Camera cam;
 
-    void Start()
+    private void Awake()
     {
         cam = Camera.main;
     }
 
-    void Update()
+    private void OnEnable()
+    {
+        cam.transform.position = transform.position;
+    }
+
+    private void Update()
     {
         if (Screen.orientation is ScreenOrientation.Portrait or ScreenOrientation.PortraitUpsideDown)
         {

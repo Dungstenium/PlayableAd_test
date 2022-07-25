@@ -1223,19 +1223,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 213036840}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 213036837}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &213036840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5556,6 +5544,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hireMinersButton: {fileID: 213036839}
   glow: {fileID: 390389156}
+  cam:
+  - {fileID: 1926701283}
+  - {fileID: 1111584162}
+  - {fileID: 1095515214}
 --- !u!114 &1049967206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5842,7 +5834,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1095515213
 Transform:
   m_ObjectHideFlags: 0
@@ -5889,7 +5881,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1111584162
 MonoBehaviour:
   m_ObjectHideFlags: 0
