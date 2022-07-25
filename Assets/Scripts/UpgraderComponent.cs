@@ -69,7 +69,7 @@ public class UpgraderComponent : MonoBehaviour
 
     private void PlaySound()
     {
-        AudioSource.PlayClipAtPoint(upgradeClip, GameManager.instance.transform.position);
+        AudioSource.PlayClipAtPoint(upgradeClip, GameManager.instance.transform.position, 0.6f);
     }
 
     private IEnumerator Shake()

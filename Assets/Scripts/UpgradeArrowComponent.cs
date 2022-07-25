@@ -47,9 +47,4 @@ public class UpgradeArrowComponent : MonoBehaviour
 		arrow.position = initialPosition;
 		arrow.gameObject.SetActive(false);
 	}
-
-	private void OnDisable()
-	{
-		Debug.Log("who deactivate you mf");
-	}
 }
