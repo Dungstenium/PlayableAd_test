@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Button = UnityEngine.UI.Button;
 
 public class TapButtonHandler : MonoBehaviour
@@ -44,6 +45,7 @@ public class TapButtonHandler : MonoBehaviour
         yield return new WaitForSeconds(phaseOneDuration);
         
         button.gameObject.SetActive(true);
+        button.GetComponentInChildren<Text>().text = "Hire more Miners!";
     }
     
     private IEnumerator FinishPhaseOne()
