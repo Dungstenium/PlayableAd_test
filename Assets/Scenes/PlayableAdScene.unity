@@ -5865,6 +5865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portraitSize: 10
   landscapeSize: 7
+  speed: 1
 --- !u!1 &1111584161
 GameObject:
   m_ObjectHideFlags: 0
@@ -5895,7 +5896,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   portraitSize: 6
-  landscapeSize: 2.4
+  landscapeSize: 2.5
+  speed: 0.6
 --- !u!4 &1111584164
 Transform:
   m_ObjectHideFlags: 0
@@ -9458,6 +9460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portraitSize: 3.7
   landscapeSize: 2.4
+  speed: 0.6
 --- !u!1 &1964159280
 GameObject:
   m_ObjectHideFlags: 0

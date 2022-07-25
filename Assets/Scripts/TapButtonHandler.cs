@@ -84,6 +84,6 @@ public class TapButtonHandler : MonoBehaviour
     {
         button.onClick.RemoveAllListeners();
         
-        // GameManager.instance.LoadNextCamera();
+        GameManager.instance.LoadNextCamera();
     }
 }

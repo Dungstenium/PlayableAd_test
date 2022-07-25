@@ -32,7 +32,7 @@ public class ImageChangerComponent : MonoBehaviour
         {
             imageComponent.sprite = portraitImage;
         }
-        else
+        else if (Screen.orientation is ScreenOrientation.LandscapeLeft or ScreenOrientation.LandscapeRight)
         {
             imageComponent.sprite = landscapeImage;
         }
