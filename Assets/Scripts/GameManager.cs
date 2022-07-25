@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     public List<CameraZoomAdapter> cam = new List<CameraZoomAdapter>();
     public int ActiveCameraIndex { get; set; } = 0;
 
+    [SerializeField] private Animator charAnim;
+    
     private void Awake()
     {
         instance = this;
@@ -38,8 +40,9 @@ public class GameManager : MonoBehaviour
         instance.ActiveCameraIndex = index;
     }
     
-    public void StartPhase4()
+    public void StartPhaseFour()
     {
-        // cam3.gameObject.SetActive(true);
+        charAnim.enabled = true;
+        LoadNextCamera();
     }
 }

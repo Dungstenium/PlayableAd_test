@@ -37,7 +37,7 @@ public class UpgraderComponent : MonoBehaviour
         
         button.onClick.AddListener(Upgrade);
         
-        OnLastUpgradeEnd += GameManager.instance.StartPhase4;
+        OnLastUpgradeEnd += GameManager.instance.StartPhaseFour;
         OnLastUpgradeEnd += DeactivateObject;
 
         cam = Camera.main;

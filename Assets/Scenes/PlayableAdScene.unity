@@ -5625,6 +5625,7 @@ MonoBehaviour:
   - {fileID: 1926701283}
   - {fileID: 1111584162}
   - {fileID: 1095515214}
+  charAnim: {fileID: 325549796}
 --- !u!114 &1049967206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7955,7 +7956,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 0.61, y: 14.55}
+  m_Size: {x: 0.61, y: 14.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
