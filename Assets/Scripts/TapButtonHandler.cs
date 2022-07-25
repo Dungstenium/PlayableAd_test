@@ -7,42 +7,61 @@ public class TapButtonHandler : MonoBehaviour
 {
     [SerializeField] private Button button;
     [SerializeField] private Button nextButton;
-    private AlphaFader fader;
 
     [SerializeField] private List<GameObject> minersList = new List<GameObject>();
     [SerializeField] private Animator minerAnim;
 
+    private float phaseOneDuration;
+    
     private void Start()
     {
-        fader = button.GetComponentInChildren<AlphaFader>();
-
-        AssignPhaseOneEvents();
+        SetUpPhaseOne();
+        
+        phaseOneDuration = minerAnim.GetCurrentAnimatorClipInfo(0).Length * 3;
     }
 
-    private void AssignPhaseOneEvents()
+    private void SetUpPhaseOne()
     {
         button.onClick.AddListener(() => GameManager.instance.glow.gameObject.SetActive(false));
-        button.onClick.AddListener(() => StartCoroutine(AnimateFirstMiner()));
-        button.onClick.AddListener(() => button.gameObject.SetActive(false));
+        button.onClick.AddListener(() => StartCoroutine(AnimateMiner()));
+        button.onClick.AddListener(() => StartCoroutine(HandleButton()));
+        button.onClick.AddListener(() => StartCoroutine(FinishPhaseOne()));
     }
 
-    private IEnumerator AnimateFirstMiner()
+    private IEnumerator AnimateMiner()
     {
         minerAnim.SetBool("ShouldMine", true);
 
-        yield return new WaitForSeconds(minerAnim.GetCurrentAnimatorClipInfo(0).Length * 3);
+        yield return new WaitForSeconds(phaseOneDuration);
         
         minerAnim.SetBool("ShouldMine", false);
-        
-        UnassignPhaseOneEvents();
-        button.gameObject.SetActive(true);
     }
 
-    private void UnassignPhaseOneEvents()
+    private IEnumerator HandleButton()
     {
+        button.gameObject.SetActive(false);
+
+        yield return new WaitForSeconds(phaseOneDuration);
+        
+        button.gameObject.SetActive(true);
+    }
+    
+    private IEnumerator FinishPhaseOne()
+    {
+        yield return new WaitForSeconds(phaseOneDuration);
+        
         button.onClick.RemoveAllListeners();
 
+        SetUpPhaseTwo();
+    }
+
+    private void SetUpPhaseTwo()
+    {
+        GameManager.instance.glow.gameObject.SetActive(true);
+            
         AssignPhaseTwoEvents();
+
+        GameManager.instance.LoadNextCamera();
     }
 
     private void AssignPhaseTwoEvents()
@@ -51,19 +70,17 @@ public class TapButtonHandler : MonoBehaviour
         {
             var delay = (i + 1) * 0.5f;
             var miner = minersList[i];
-            
+
             button.onClick.AddListener(() => StartCoroutine(ObjectActivation(miner, delay)));
         }
 
         button.onClick.AddListener(() => GameManager.instance.glow.gameObject.SetActive(false));
-            
+
         button.onClick.AddListener(() => StartCoroutine(ObjectActivation(nextButton.gameObject, 3.0f)));
-        
+
         button.onClick.AddListener(() => button.gameObject.SetActive(false));
 
-        GameManager.instance.LoadNextCamera();
-        
-        button.onClick.AddListener(() => StartCoroutine(UnassignAfterTime(3.0f)));
+        button.onClick.AddListener(() => StartCoroutine(FinishPhaseAfterTime(3.0f)));
     }
 
     private IEnumerator ObjectActivation(GameObject goToActivate,float delay)
@@ -73,17 +90,17 @@ public class TapButtonHandler : MonoBehaviour
         goToActivate.SetActive(true);
     }
 
-    private IEnumerator UnassignAfterTime(float delay)
+    private IEnumerator FinishPhaseAfterTime(float delay)
     {
         yield return new WaitForSeconds(delay);
 
-        UnassignPhaseTwoEvents();
+        FinishPhaseTwo();
     }
     
-    private void UnassignPhaseTwoEvents()
+    private void FinishPhaseTwo()
     {
         button.onClick.RemoveAllListeners();
         
-        GameManager.instance.LoadNextCamera();
+        // GameManager.instance.LoadNextCamera();
     }
 }
