@@ -1174,7 +1174,7 @@ RectTransform:
   - {fileID: 1843209096}
   - {fileID: 551444799}
   m_Father: {fileID: 1705257533}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.49727285, y: 0.56760746}
   m_AnchorMax: {x: 0.49727285, y: 0.56760746}
@@ -1728,7 +1728,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1705257533}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4967,7 +4967,7 @@ GameObject:
   - component: {fileID: 942087639}
   - component: {fileID: 942087638}
   m_Layer: 5
-  m_Name: CTO_Button
+  m_Name: CTO Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4980,17 +4980,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 942087636}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.37485, y: 0.37485, z: 0.37485}
+  m_LocalScale: {x: 0.52, y: 0.52, z: 0.52}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1705257533}
+  m_Father: {fileID: 1252257651}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 60}
+  m_AnchoredPosition: {x: 0, y: -190.00002}
   m_SizeDelta: {x: 646, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &942087638
@@ -5619,13 +5619,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d16b4043e909cf40bc734b8c35f4a81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hireMinersButton: {fileID: 213036839}
   glow: {fileID: 390389156}
   cam:
   - {fileID: 1926701283}
   - {fileID: 1111584162}
   - {fileID: 1095515214}
   charAnim: {fileID: 325549796}
+  animCTO: {fileID: 1252257652}
 --- !u!114 &1049967206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6567,7 +6567,7 @@ RectTransform:
   - {fileID: 1023591927}
   - {fileID: 858656892}
   m_Father: {fileID: 1705257533}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6746,6 +6746,65 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1252257650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1252257651}
+  - component: {fileID: 1252257652}
+  m_Layer: 5
+  m_Name: CTO Animator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1252257651
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252257650}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1422441888}
+  - {fileID: 942087637}
+  m_Father: {fileID: 1705257533}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1252257652
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252257650}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 143e1e173ab717c468083940e161843e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1267937430
 GameObject:
   m_ObjectHideFlags: 0
@@ -7513,7 +7572,7 @@ GameObject:
   - component: {fileID: 1422441890}
   - component: {fileID: 1422441889}
   m_Layer: 5
-  m_Name: CTO_BG
+  m_Name: CTO BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7526,17 +7585,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1422441887}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1705257533}
+  m_Father: {fileID: 1252257651}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 33}
+  m_AnchoredPosition: {x: 0, y: -217}
   m_SizeDelta: {x: 4022, y: 195.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1422441889
@@ -8842,8 +8901,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1422441888}
-  - {fileID: 942087637}
+  - {fileID: 1252257651}
   - {fileID: 213036838}
   - {fileID: 1237029068}
   - {fileID: 291209445}

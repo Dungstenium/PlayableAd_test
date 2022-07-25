@@ -1,14 +1,10 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Button = UnityEngine.UI.Button;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private Button hireMinersButton;
-
-    // [SerializeField] private CinemachineVirtualCamera cam1;
-    // [SerializeField] private CinemachineVirtualCamera cam3;
-
     public static GameManager instance;
 
     public GlowBlinker glow;
@@ -17,18 +13,12 @@ public class GameManager : MonoBehaviour
     public int ActiveCameraIndex { get; set; } = 0;
 
     [SerializeField] private Animator charAnim;
+
+    [SerializeField] private Animator animCTO;
     
     private void Awake()
     {
         instance = this;
-    }
-
-    public void HireMoreMiners() // called through timeline
-    {
-        hireMinersButton.gameObject.SetActive(true);
-        // hireMinersButton.GetComponentInChildren<TMP_Text>().text = $"Hire more miners";
-
-        // cam1.gameObject.SetActive(false);
     }
 
     public void LoadNextCamera()
@@ -44,5 +34,13 @@ public class GameManager : MonoBehaviour
     {
         charAnim.enabled = true;
         LoadNextCamera();
+        StartCoroutine(AnimateCTO());
+    }
+
+    private IEnumerator AnimateCTO()
+    {
+        yield return new WaitForSeconds(5);
+
+        animCTO.enabled = true;
     }
 }
