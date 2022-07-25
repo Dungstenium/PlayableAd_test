@@ -1,7 +1,5 @@
 using System;
 using System.Collections;
-// using Cinemachine;
-// using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 

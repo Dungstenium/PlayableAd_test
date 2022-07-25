@@ -1,6 +1,3 @@
-// using Cinemachine;
-// using TMPro;
-
 using System.Collections.Generic;
 using UnityEngine;
 using Button = UnityEngine.UI.Button;
