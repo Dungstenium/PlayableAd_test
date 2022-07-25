@@ -31,6 +31,10 @@ public class UpgraderComponent : MonoBehaviour
     private Vector3 camInitialPos;
     private Quaternion camInitialRot;
 
+    private UpgradeArrowComponent arrow;
+
+    [SerializeField] private AudioClip upgradeClip;
+
     void Start()
     {
         button = GetComponent<Button>();
@@ -41,6 +45,8 @@ public class UpgraderComponent : MonoBehaviour
         OnLastUpgradeEnd += DeactivateObject;
 
         cam = Camera.main;
+
+        arrow = FindObjectOfType<UpgradeArrowComponent>(true);
     }
 
     public void Upgrade()
@@ -52,10 +58,18 @@ public class UpgraderComponent : MonoBehaviour
         StartCoroutine(Shake());
         StartCoroutine(ManipulateButtonActivation());
         
-        // PlaySound();
+        arrow.gameObject.SetActive(false);
+        arrow.gameObject.SetActive(true);
+        
+        PlaySound();
 
         SwapSprites();
         SwapText();
+    }
+
+    private void PlaySound()
+    {
+        AudioSource.PlayClipAtPoint(upgradeClip, GameManager.instance.transform.position);
     }
 
     private IEnumerator Shake()
@@ -66,7 +80,7 @@ public class UpgraderComponent : MonoBehaviour
         
         float counter = 0;
         float shakeLength = 0.2f * upgradeLevel;
-        float shakePower = 0.05f;
+        float shakePower = 0.02f;
         
         StartShake(shakeLength, shakePower);
 
